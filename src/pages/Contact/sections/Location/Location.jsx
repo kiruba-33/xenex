@@ -18,13 +18,13 @@ export default function Location() {
           {/* Main Content (Left) */}
           <div className="lg:col-span-5 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Our Location
               </span>
             </div>
             
-            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               Find Xenex Fiber Works
             </h2>
             
@@ -47,7 +47,7 @@ export default function Location() {
                 href={mapsSearchUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-[13px] font-bold tracking-[0.15em] uppercase text-gray-900 hover:text-gray-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-sm"
+                className="inline-flex items-center gap-3 text-[13px] font-bold tracking-[0.15em] uppercase text-[var(--color-accent)] hover:text-gray-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-sm"
               >
                 Get Directions
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

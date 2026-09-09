@@ -1,6 +1,6 @@
 import React from 'react';
 // Using the hero image as the premium placeholder until final manufacturing assets are ready
-import capabilityImage from '../../../../assets/hero.png';
+import capabilityImage from '../../../../assets/images/abouthome.webp';
 
 export default function Capabilities() {
   const capabilities = [
@@ -29,14 +29,14 @@ export default function Capabilities() {
         {/* Header Section */}
         <div className="flex flex-col items-start max-w-[900px] mb-16 lg:mb-24 animate-fade-in-up">
           <div className="flex items-center gap-4 mb-6">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
               Our Capabilities
             </span>
           </div>
-          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             CAPABILITY BUILT AROUND<br />
-            <span className="text-gray-400">FIBERGLASS EXPERTISE.</span>
+            <span className="">FIBERGLASS EXPERTISE.</span>
           </h2>
           <p className="text-lg md:text-[21px] text-gray-600 leading-relaxed font-medium max-w-[700px]">
             From moulding and manufacturing to lamination and testing, Xenex combines practical fiberglass expertise with disciplined production and quality control.

@@ -11,15 +11,15 @@ export default function BoatSolutions() {
           {/* Content (Left) */}
           <div className="lg:col-span-6 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Boat Solutions
               </span>
             </div>
             
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] lg:text-[64px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] lg:text-[64px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               FIBERGLASS BOATS<br />
-              <span className="text-gray-400">BUILT FOR THE WATER.</span>
+              <span className="">BUILT FOR THE WATER.</span>
             </h2>
             
             <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium mb-12 max-w-[600px]">
@@ -30,7 +30,7 @@ export default function BoatSolutions() {
               
               {/* Boat Categories */}
               <div className="pb-8 border-b border-gray-200">
-                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 block mb-5">
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block mb-5">
                   Fiberglass Fishing Boats
                 </span>
                 <ul className="space-y-3">
@@ -51,7 +51,7 @@ export default function BoatSolutions() {
 
               {/* Customization Options */}
               <div className="pb-8 border-b border-gray-200">
-                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 block mb-5">
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block mb-5">
                   Customization Available
                 </span>
                 <div className="flex flex-wrap gap-2.5">
@@ -65,7 +65,7 @@ export default function BoatSolutions() {
 
               {/* Additional Services */}
               <div>
-                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 block mb-5">
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block mb-5">
                   Additional Capabilities
                 </span>
                 <p className="text-[15px] md:text-[16px] text-gray-700 font-medium">

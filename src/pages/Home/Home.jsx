@@ -11,7 +11,6 @@ import Manufacturing from './sections/Manufacturing/Manufacturing';
 import BoatShowcase from './sections/BoatShowcase/BoatShowcase';
 import QualityAssurance from './sections/QualityAssurance/QualityAssurance';
 import Leadership from './sections/Leadership/Leadership';
-import Gallery from './sections/Gallery/Gallery';
 import FinalCTA from './sections/FinalCTA/FinalCTA';
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
       <BoatShowcase />
       <QualityAssurance />
       <Leadership />
-      <Gallery />
       <FinalCTA />
     </>
   );

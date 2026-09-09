@@ -11,15 +11,15 @@ export default function Values() {
           {/* Header (Left Column - 5 cols) */}
           <div className="lg:col-span-5 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Our Values
               </span>
             </div>
             
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               WHAT GUIDES<br />
-              <span className="text-gray-400">THE WAY WE BUILD.</span>
+              <span className="">THE WAY WE BUILD.</span>
             </h2>
             
             <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium">

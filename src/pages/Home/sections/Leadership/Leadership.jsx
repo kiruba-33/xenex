@@ -12,14 +12,14 @@ export default function Leadership() {
         {/* Header Section */}
         <div className="flex flex-col items-start max-w-[800px] mx-auto lg:mx-0 text-left mb-16 lg:mb-24 animate-fade-in-up">
           <div className="flex items-center gap-4 mb-6">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
               Leadership
             </span>
           </div>
-          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             EXPERIENCE THAT<br />
-            <span className="text-gray-400">SHAPES EVERY BUILD.</span>
+            <span className="">SHAPES EVERY BUILD.</span>
           </h2>
           <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium">
             With more than 25 years of fiberglass industry experience, Mr. Muthu brings technical knowledge and cross-industry perspective to Xenex Fiber Works.
@@ -46,7 +46,7 @@ export default function Leadership() {
             {/* Name & Role */}
             <div className="mb-12 pb-10 border-b border-gray-200">
               <h3 className="text-[36px] md:text-[44px] font-semibold text-gray-900 mb-3 tracking-tight">MR. MUTHU</h3>
-              <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-gray-500 block">
+              <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] block">
                 Managing Director
               </span>
             </div>
@@ -73,7 +73,7 @@ export default function Leadership() {
 
             {/* Industry Expertise Strip */}
             <div className="mb-16">
-              <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 block mb-6">
+              <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] block mb-6">
                 Core Industry Expertise
               </span>
               <div className="flex flex-wrap gap-3 max-w-[600px]">

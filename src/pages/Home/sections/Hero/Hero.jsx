@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../../../assets/hero.png';
+import heroImage from '../../../../assets/images/heroimg.webp';
 
 export default function Hero() {
   return (
@@ -30,15 +30,15 @@ export default function Hero() {
         
         {/* Small Centered Brand Label */}
         <div className="flex items-center gap-4 mb-5 lg:mb-6">
-          <span className="w-8 h-[1px] bg-[#111111]/20 hidden sm:block"></span>
-          <span className="text-[11px] md:text-xs font-semibold tracking-[0.25em] uppercase text-[#444444]">
+          <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+          <span className="text-[11px] md:text-xs font-semibold tracking-[0.25em] uppercase text-[var(--color-accent)]">
             Xenex Fiber Works
           </span>
-          <span className="w-8 h-[1px] bg-[#111111]/20 hidden sm:block"></span>
+          <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
         </div>
         
         {/* Main Centered Headline */}
-        <h1 className="text-[34px] sm:text-[44px] md:text-[54px] lg:text-[64px] xl:text-[72px] font-medium leading-[1.08] tracking-tight text-[#111111]">
+        <h1 className="text-[34px] sm:text-[44px] md:text-[54px] lg:text-[64px] xl:text-[72px] font-medium leading-[1.08] tracking-tight text-[var(--color-primary)]">
           ENGINEERED FIBERGLASS.<br />
           BUILT FOR PERFORMANCE.
         </h1>
@@ -52,8 +52,8 @@ export default function Hero() {
           to { opacity: 1; transform: translateY(0); }
         }
         @keyframes imageReveal {
-          from { transform: scale(1.03); }
-          to { transform: scale(1); }
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
         @keyframes fadeIn {
           from { opacity: 0; }

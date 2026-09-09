@@ -13,16 +13,16 @@ export default function FinalCTA() {
         {/* Header Content */}
         <div className="max-w-[850px] animate-fade-in-up">
           <div className="flex items-center justify-center gap-4 mb-8">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
               Let's Talk
             </span>
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
           </div>
           
-          <h2 className="text-[44px] sm:text-[56px] md:text-[72px] lg:text-[84px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[44px] sm:text-[56px] md:text-[72px] lg:text-[84px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             READY TO BUILD<br />
-            <span className="text-gray-400">WITH FIBERGLASS?</span>
+            <span className="">WITH FIBERGLASS?</span>
           </h2>
           
           <p className="text-[17px] md:text-[21px] text-gray-600 leading-relaxed font-medium max-w-[650px] mx-auto mb-14">
@@ -58,7 +58,7 @@ export default function FinalCTA() {
           
           {/* Phone */}
           <div className="flex flex-col md:items-center text-left md:text-center group">
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-3 block">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-3 block">
               Phone
             </span>
             <a 
@@ -71,7 +71,7 @@ export default function FinalCTA() {
 
           {/* WhatsApp */}
           <div className="flex flex-col md:items-center text-left md:text-center group">
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-3 block">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-3 block">
               WhatsApp
             </span>
             <a 
@@ -86,7 +86,7 @@ export default function FinalCTA() {
 
           {/* Email */}
           <div className="flex flex-col md:items-center text-left md:text-center group">
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-3 block">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-3 block">
               Email
             </span>
             <a 
@@ -99,7 +99,7 @@ export default function FinalCTA() {
 
           {/* Location */}
           <div className="flex flex-col md:items-center text-left md:text-center group">
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-3 block">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-3 block">
               Location
             </span>
             <span className="text-[13px] md:text-[14px] font-medium tracking-wide text-gray-600 leading-relaxed">

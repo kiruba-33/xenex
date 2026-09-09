@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --color-primary: #3A4283;
+    --color-secondary: #5195C6;
+    --color-accent: #EB6E2E;
+    --color-gold: #E2AC40;
+    --color-red: #E1342E;
+    --color-green: #A3C636;
+
+    /* Neutral Colors */
+    --color-background: #FFFFFF;
+    --color-background-warm: #FAFAF8;
+    --color-text: #161B2B;
+    --color-text-muted: #5F6675;
+    --color-border: #E5E7EB;
+    --color-background-muted: #F4F5F7;
+
+    /* Semantic Variables */
+    --color-btn-bg: var(--color-accent);
+    --color-btn-text: var(--color-background);
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-secondary);
+  }
+}

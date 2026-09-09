@@ -11,17 +11,17 @@ export default function SolutionsHero() {
         
         {/* Eyebrow */}
         <div className="flex items-center justify-center gap-4 mb-8 animate-fade-in-up">
-          <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-          <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+          <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+          <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
             Our Solutions
           </span>
-          <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
+          <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="max-w-[900px] text-[40px] sm:text-[50px] md:text-[60px] lg:text-[72px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+        <h1 className="max-w-[900px] text-[40px] sm:text-[50px] md:text-[60px] lg:text-[72px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           ENGINEERED FIBERGLASS<br />
-          <span className="text-gray-400">FOR DEMANDING APPLICATIONS.</span>
+          <span className="">FOR DEMANDING APPLICATIONS.</span>
         </h1>
 
         {/* Supporting Text */}
@@ -54,7 +54,7 @@ export default function SolutionsHero() {
         </div>
 
         {/* Optional Micro Line */}
-        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[10px] md:text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[10px] md:text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <span>Marine</span>
           <span className="w-1 h-1 rounded-full bg-gray-300 hidden sm:block"></span>
           <span className="hidden sm:inline">Automotive</span>

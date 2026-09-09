@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '../../assets/logo/logo.png';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -7,7 +8,6 @@ const navLinks = [
   { name: 'Solutions', path: '/solutions' },
   { name: 'Industries', path: '/industries' },
   { name: 'Manufacturing', path: '/manufacturing' },
-  { name: 'Gallery', path: '/gallery' },
   { name: 'Contact', path: '/contact' }
 ];
 
@@ -44,48 +44,60 @@ export default function Navbar() {
     };
   }, [isMobileMenuOpen]);
 
+  const isHome = location.pathname === '/';
+  const isTransparent = isHome && !isScrolled && !isMobileMenuOpen;
+
+  const getHeaderClasses = () => {
+    if (isTransparent) {
+      return 'bg-transparent py-4 lg:py-6 border-b border-transparent';
+    }
+    return isScrolled 
+      ? 'bg-[var(--color-background)]/95 backdrop-blur-md shadow-sm border-b border-[var(--color-border)] py-3 lg:py-4' 
+      : 'bg-[var(--color-background)] border-b border-transparent py-4 lg:py-6';
+  };
+
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 py-3 lg:py-4' 
-          : 'bg-[#F9F9F9] border-b border-transparent py-4 lg:py-6'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${getHeaderClasses()}`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24">
         <nav className="flex items-center justify-between" aria-label="Main Navigation">
           
-          {/* Brand Logo Wordmark */}
+          {/* Brand Logo Image */}
           <Link 
             to="/" 
-            className="flex flex-col group focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-sm" 
+            className="flex flex-col justify-center group focus:outline-none focus:ring-2 focus:ring-[var(--color-border)] rounded-sm" 
             aria-label="Xenex Fiber Works Home"
           >
-            <span className="text-2xl font-extrabold text-[#0A0A0A] tracking-tight leading-none group-hover:text-gray-700 transition-colors">
-              XENEX
-            </span>
-            <span className="text-[0.65rem] font-bold text-[#555555] tracking-[0.2em] mt-0.5 uppercase">
-              Fiber Works
-            </span>
+            <img 
+              src={logoImg} 
+              alt="Xenex Fiber Works" 
+              className="h-9 md:h-10 lg:h-11 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8 xl:space-x-10">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
+              
+              let linkClasses = 'text-[15px] font-semibold transition-colors duration-300 relative py-2 outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-border)] rounded-sm ';
+              
+              // Always use the dark #161B2B (var(--color-text)) text for default state
+              // Keep primary brand color for active/hover state
+              linkClasses += isActive ? 'text-[var(--color-primary)]' : 'text-[var(--color-text)] hover:text-[var(--color-primary)]';
+
               return (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-[15px] font-semibold transition-colors duration-300 relative py-2 outline-none focus-visible:ring-2 focus-visible:ring-gray-300 rounded-sm ${
-                    isActive ? 'text-[#0A0A0A]' : 'text-[#666666] hover:text-[#1A1A1A]'
-                  }`}
+                  className={linkClasses}
                   aria-current={isActive ? "page" : undefined}
                 >
                   {link.name}
                   {/* Subtle animated active indicator */}
                   <span 
-                    className={`absolute bottom-0 left-0 w-full h-[2px] bg-[#1A1A1A] transform origin-left transition-transform duration-300 ease-out ${
+                    className={`absolute bottom-0 left-0 w-full h-[2px] transform origin-left transition-transform duration-300 ease-out bg-[var(--color-primary)] ${
                       isActive ? 'scale-x-100' : 'scale-x-0'
                     }`}
                   ></span>
@@ -98,7 +110,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-7 py-3 text-[15px] font-semibold text-white bg-[#1A1A1A] rounded-full hover:bg-black hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              className="inline-flex items-center justify-center px-7 py-3 text-[13px] font-bold tracking-[0.15em] uppercase text-white bg-[var(--color-accent)] rounded-full hover:brightness-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-accent)]"
             >
               Get In Touch
             </Link>
@@ -107,7 +119,11 @@ export default function Navbar() {
           {/* Mobile Menu Toggle Button */}
           <button
             type="button"
-            className="lg:hidden p-2 -mr-2 text-[#1A1A1A] hover:bg-gray-100 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className={`lg:hidden p-2 -mr-2 rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-border)] ${
+              isTransparent 
+                ? 'text-white hover:bg-white/10' 
+                : 'text-[var(--color-text)] hover:bg-[var(--color-background-muted)]'
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-expanded={isMobileMenuOpen}
             aria-label="Toggle navigation menu"
@@ -130,8 +146,8 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl transition-all duration-300 ease-in-out transform origin-top ${
-          isMobileMenuOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0 pointer-events-none'
+        className={`lg:hidden absolute top-full left-0 w-full bg-[var(--color-background)] border-b border-[var(--color-border)] shadow-xl transition-all duration-300 ease-in-out transform ${
+          isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'
         }`}
       >
         <div className="flex flex-col p-6 max-h-[85vh] overflow-y-auto">
@@ -142,10 +158,10 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-lg font-semibold py-3 px-4 rounded-xl transition-colors outline-none focus-visible:ring-2 focus-visible:ring-gray-300 ${
+                  className={`text-lg font-semibold py-3 px-4 rounded-sm transition-colors outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-border)] ${
                     isActive 
-                      ? 'bg-gray-50 text-[#0A0A0A]' 
-                      : 'text-[#555555] hover:bg-gray-50 hover:text-[#1A1A1A]'
+                      ? 'bg-[var(--color-background-muted)] text-[var(--color-primary)]' 
+                      : 'text-[var(--color-text)] hover:bg-[var(--color-background-muted)] hover:text-[var(--color-primary)]'
                   }`}
                   aria-current={isActive ? "page" : undefined}
                 >
@@ -158,7 +174,7 @@ export default function Navbar() {
           <div className="px-4 pb-4">
             <Link
               to="/contact"
-              className="flex items-center justify-center w-full py-4 text-base font-semibold text-white bg-[#1A1A1A] rounded-xl hover:bg-black active:scale-[0.98] transition-all outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900"
+              className="flex items-center justify-center w-full py-4 text-[14px] font-bold tracking-[0.15em] uppercase text-white bg-[var(--color-accent)] rounded-full hover:brightness-90 transition-all outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-accent)]"
             >
               Get In Touch
             </Link>

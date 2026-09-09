@@ -10,16 +10,16 @@ export default function ClosingCTA() {
         {/* Header Content */}
         <div className="max-w-[850px] animate-fade-in-up">
           <div className="flex items-center justify-center gap-4 mb-8">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
               What's Next
             </span>
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
           </div>
           
-          <h2 className="text-[40px] sm:text-[50px] md:text-[64px] lg:text-[76px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[40px] sm:text-[50px] md:text-[64px] lg:text-[76px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             READY TO EXPLORE<br />
-            <span className="text-gray-400">WHAT XENEX CAN BUILD?</span>
+            <span className="">WHAT XENEX CAN BUILD?</span>
           </h2>
           
           <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium max-w-[650px] mx-auto mb-14">

@@ -36,13 +36,13 @@ export default function Quality() {
           {/* Main Content (Left) */}
           <div className="lg:col-span-5 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Quality Assurance
               </span>
             </div>
             
-            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               Quality Built Into Every Stage
             </h2>
             
@@ -51,7 +51,7 @@ export default function Quality() {
             </p>
 
             <div className="mt-4 pt-8 border-t border-gray-200">
-              <span className="text-[11px] md:text-[12px] font-bold tracking-[0.25em] uppercase text-gray-400">
+              <span className="text-[11px] md:text-[12px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Quality &bull; Safety &bull; Reliability
               </span>
             </div>

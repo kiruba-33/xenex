@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // Using the existing hero image as a premium placeholder
-import companyImage from '../../../../assets/hero.png';
+import companyImage from '../../../../assets/images/abouthome.webp';
 
 export default function CompanyIntro() {
   return (
@@ -16,14 +16,14 @@ export default function CompanyIntro() {
             
             {/* Small Eyebrow Label */}
             <div className="flex items-center gap-4 mb-6 md:mb-8">
-              <span className="w-8 h-[1px] bg-[#111111]/20 hidden sm:block"></span>
-              <span className="text-[10px] md:text-xs font-semibold tracking-[0.25em] uppercase text-[#666666]">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Xenex Fiber Works
               </span>
             </div>
             
             {/* Main Headline */}
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               BUILDING WITH FIBERGLASS.<br />
               <span className="font-medium text-[#777777]">ENGINEERED FOR INDUSTRY.</span>
             </h2>
@@ -42,7 +42,7 @@ export default function CompanyIntro() {
             <div>
               <Link 
                 to="/about" 
-                className="inline-flex items-center justify-center px-8 py-3.5 text-[14px] font-medium text-white bg-[#111111] rounded-full hover:bg-[#333333] hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 shadow-sm"
+                className="inline-flex items-center justify-center px-8 py-3.5 text-[14px] font-medium text-white bg-[var(--color-primary)] rounded-full hover:brightness-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)] shadow-sm"
               >
                 Discover Xenex
               </Link>
@@ -70,7 +70,7 @@ export default function CompanyIntro() {
           
           {/* Fact 01 */}
           <div className="flex flex-col">
-            <span className="text-[10px] font-bold text-[#999999] tracking-[0.25em] uppercase mb-3">
+            <span className="text-[10px] font-bold text-[var(--color-secondary)] tracking-[0.25em] uppercase mb-3">
               01 &mdash; COMPANY
             </span>
             <h4 className="text-xl md:text-[22px] font-medium text-[#111111] tracking-tight">
@@ -80,7 +80,7 @@ export default function CompanyIntro() {
 
           {/* Fact 02 */}
           <div className="flex flex-col">
-            <span className="text-[10px] font-bold text-[#999999] tracking-[0.25em] uppercase mb-3">
+            <span className="text-[10px] font-bold text-[var(--color-secondary)] tracking-[0.25em] uppercase mb-3">
               02 &mdash; EXPERIENCE
             </span>
             <h4 className="text-xl md:text-[22px] font-medium text-[#111111] tracking-tight mb-1">
@@ -93,7 +93,7 @@ export default function CompanyIntro() {
 
           {/* Fact 03 */}
           <div className="flex flex-col">
-            <span className="text-[10px] font-bold text-[#999999] tracking-[0.25em] uppercase mb-3">
+            <span className="text-[10px] font-bold text-[var(--color-secondary)] tracking-[0.25em] uppercase mb-3">
               03 &mdash; PRESENCE
             </span>
             <h4 className="text-xl md:text-[22px] font-medium text-[#111111] tracking-tight">

@@ -4,32 +4,38 @@ const industries = [
   {
     id: '01',
     name: 'MARINE',
-    description: 'Fiberglass boats and marine FRP applications for demanding marine environments.'
+    description: 'Fiberglass boats and marine FRP applications for demanding marine environments.',
+    color: 'var(--color-primary)'
   },
   {
     id: '02',
     name: 'AUTOMOTIVE',
-    description: 'Fiberglass automobile components, moulds and FRP parts for automotive applications.'
+    description: 'Fiberglass automobile components, moulds and FRP parts for automotive applications.',
+    color: 'var(--color-primary)'
   },
   {
     id: '03',
     name: 'CONSTRUCTION',
-    description: 'FRP products, tanks, piping, lamination and fiberglass applications for construction requirements.'
+    description: 'FRP products, tanks, piping, lamination and fiberglass applications for construction requirements.',
+    color: 'var(--color-primary)'
   },
   {
     id: '04',
     name: 'OIL & GAS',
-    description: 'FRP piping, tanks, scrubber systems, lamination and industrial fiberglass applications.'
+    description: 'FRP piping, tanks, scrubber systems, lamination and industrial fiberglass applications.',
+    color: 'var(--color-primary)'
   },
   {
     id: '05',
     name: 'POWER PLANTS',
-    description: 'Fiberglass tanks, piping, lamination and engineered FRP applications for power plant requirements.'
+    description: 'Fiberglass tanks, piping, lamination and engineered FRP applications for power plant requirements.',
+    color: 'var(--color-primary)'
   },
   {
     id: '06',
     name: 'SEMICONDUCTOR PLANTS',
-    description: 'Specialized fiberglass and FRP applications for demanding semiconductor plant environments.'
+    description: 'Specialized fiberglass and FRP applications for demanding semiconductor plant environments.',
+    color: 'var(--color-primary)'
   }
 ];
 
@@ -48,12 +54,12 @@ export default function IndustryGrid() {
               style={{ animationDelay: `${0.1 + (index * 0.05)}s` }}
             >
               <div className="w-full flex items-center justify-between mb-4 lg:mb-6">
-                <span className="text-[12px] md:text-[14px] font-bold text-gray-300 tracking-[0.15em]">
+                <span className="text-[12px] md:text-[14px] font-bold tracking-[0.15em]" style={{ color: 'var(--color-accent)' }}>
                   {item.id} &mdash;
                 </span>
                 
                 {/* Subtle Arrow */}
-                <div className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-gray-300 group-hover:border-gray-300 group-hover:text-gray-900 transition-all duration-500 transform group-hover:translate-x-1.5">
+                <div className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-gray-300 group-hover:border-gray-300 transition-all duration-500 transform group-hover:translate-x-1.5" style={{ '--tw-text-opacity': 1, color: 'inherit' }} onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; }} onMouseLeave={(e) => { e.currentTarget.style.color = ''; e.currentTarget.style.borderColor = ''; }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -61,7 +67,10 @@ export default function IndustryGrid() {
                 </div>
               </div>
               
-              <h3 className="text-[22px] md:text-[28px] lg:text-[32px] font-semibold text-gray-900 tracking-tight leading-snug mb-3 lg:mb-4 transition-colors duration-300">
+              <h3 
+                className="text-[22px] md:text-[28px] lg:text-[32px] font-semibold tracking-tight leading-snug mb-3 lg:mb-4 transition-colors duration-300"
+                style={{ color: 'var(--color-primary)' }}
+              >
                 {item.name}
               </h3>
               

@@ -10,15 +10,15 @@ export default function EngineeringSolutions() {
           {/* Main Content (Left) */}
           <div className="lg:col-span-6 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Engineering FRP
               </span>
             </div>
             
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] lg:text-[64px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] lg:text-[64px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               CUSTOM FIBERGLASS<br />
-              <span className="text-gray-400">BUILT AROUND REQUIREMENTS.</span>
+              <span className="">BUILT AROUND REQUIREMENTS.</span>
             </h2>
             
             <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium mb-12 max-w-[600px]">
@@ -27,7 +27,7 @@ export default function EngineeringSolutions() {
 
             {/* Industry Applications */}
             <div className="w-full flex flex-col gap-6">
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 block">
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block">
                 Cross-Industry Application
               </span>
               <div className="flex flex-wrap gap-3">
@@ -39,7 +39,7 @@ export default function EngineeringSolutions() {
                   'Power Plant', 
                   'Semiconductor Plant'
                 ].map((ind, idx) => (
-                  <span key={idx} className="text-[13px] md:text-[14px] font-semibold tracking-[0.1em] uppercase text-gray-900 bg-white border border-gray-200 px-5 py-2.5 rounded-full shadow-sm hover:border-gray-400 transition-colors">
+                  <span key={idx} className="text-[13px] md:text-[14px] font-semibold tracking-[0.1em] uppercase text-[var(--color-accent)] bg-white border border-gray-200 px-5 py-2.5 rounded-full shadow-sm hover:border-gray-400 transition-colors">
                     {ind}
                   </span>
                 ))}
@@ -55,7 +55,7 @@ export default function EngineeringSolutions() {
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white rounded-full opacity-60 blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
             <div className="relative z-10">
-              <span className="inline-block text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500 mb-8 border border-gray-200 bg-white px-4 py-2 rounded-full shadow-sm">
+              <span className="inline-block text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] mb-8 border border-gray-200 bg-white px-4 py-2 rounded-full shadow-sm">
                 Product Development
               </span>
               

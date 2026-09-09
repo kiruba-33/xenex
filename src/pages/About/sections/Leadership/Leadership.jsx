@@ -12,15 +12,15 @@ export default function Leadership() {
           {/* Header (Left - 5 cols) */}
           <div className="lg:col-span-5 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Leadership
               </span>
             </div>
             
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               EXPERIENCE<br />
-              <span className="text-gray-400">BEHIND EVERY BUILD.</span>
+              <span className="">BEHIND EVERY BUILD.</span>
             </h2>
             
             <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium">
@@ -36,7 +36,7 @@ export default function Leadership() {
               <h3 className="text-[36px] md:text-[48px] lg:text-[56px] font-semibold text-gray-900 mb-3 tracking-tight uppercase leading-none">
                 Mr. Muthu
               </h3>
-              <span className="text-[11px] md:text-[13px] font-bold tracking-[0.25em] uppercase text-gray-500 block">
+              <span className="text-[11px] md:text-[13px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block">
                 Managing Director
               </span>
             </div>
@@ -46,7 +46,7 @@ export default function Leadership() {
               <div className="text-[44px] md:text-[56px] font-semibold text-gray-900 leading-none tracking-tight mb-3">
                 25+ <span className="text-[24px] md:text-[32px] text-gray-400">YEARS</span>
               </div>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500 block mb-6">
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block mb-6">
                 Fiberglass Industry Experience
               </span>
               <p className="text-[16px] md:text-[18px] text-gray-800 leading-relaxed font-medium max-w-[600px]">
@@ -56,7 +56,7 @@ export default function Leadership() {
             
             {/* Core Expertise Tags */}
             <div>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 block mb-5">
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] block mb-5">
                 Core Expertise
               </span>
               <div className="flex flex-wrap gap-2.5">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // Using the hero image as the premium placeholder until final boat assets are ready
-import boatImage from '../../../../assets/hero.png';
+import boatImage from '../../../../assets/images/home3.webp';
 
 export default function BoatShowcase() {
   return (
@@ -12,15 +12,15 @@ export default function BoatShowcase() {
         {/* Centered Header Section */}
         <div className="flex flex-col items-center text-center max-w-[850px] mx-auto mb-16 lg:mb-20 animate-fade-in-up">
           <div className="flex items-center gap-4 mb-6">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
               Fiberglass Boats
             </span>
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
           </div>
-          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             BUILT FOR THE WATER.<br />
-            <span className="text-gray-400">READY FOR THE WORK.</span>
+            <span className="">READY FOR THE WORK.</span>
           </h2>
           <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium max-w-[700px]">
             From recreational fishing to commercial marine applications, Xenex manufactures fiberglass boats with configurable sizes, finishes and equipment options.
@@ -44,7 +44,7 @@ export default function BoatShowcase() {
           {/* 01 Small Boats */}
           <div className="group cursor-pointer flex flex-col p-6 -mx-6 md:mx-0 md:p-0 hover:bg-white md:hover:bg-transparent rounded-[24px] md:rounded-none transition-colors">
             <div className="flex items-center justify-between mb-6">
-              <span className="text-gray-400 text-sm font-bold tracking-[0.2em] group-hover:text-gray-900 transition-colors duration-300">
+              <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-900 transition-colors duration-300">
                 01
               </span>
               <span className="text-gray-300 group-hover:text-gray-900 group-hover:translate-x-1 transition-all duration-300">
@@ -62,7 +62,7 @@ export default function BoatShowcase() {
           {/* 02 Large Boats */}
           <div className="group cursor-pointer flex flex-col p-6 -mx-6 md:mx-0 md:p-0 hover:bg-white md:hover:bg-transparent rounded-[24px] md:rounded-none transition-colors">
             <div className="flex items-center justify-between mb-6">
-              <span className="text-gray-400 text-sm font-bold tracking-[0.2em] group-hover:text-gray-900 transition-colors duration-300">
+              <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-900 transition-colors duration-300">
                 02
               </span>
               <span className="text-gray-300 group-hover:text-gray-900 group-hover:translate-x-1 transition-all duration-300">
@@ -80,7 +80,7 @@ export default function BoatShowcase() {
           {/* 03 Specialized Commercial Boats */}
           <div className="group cursor-pointer flex flex-col p-6 -mx-6 md:mx-0 md:p-0 hover:bg-white md:hover:bg-transparent rounded-[24px] md:rounded-none transition-colors">
             <div className="flex items-center justify-between mb-6">
-              <span className="text-gray-400 text-sm font-bold tracking-[0.2em] group-hover:text-gray-900 transition-colors duration-300">
+              <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-900 transition-colors duration-300">
                 03
               </span>
               <span className="text-gray-300 group-hover:text-gray-900 group-hover:translate-x-1 transition-all duration-300">
@@ -104,7 +104,7 @@ export default function BoatShowcase() {
             <span className="text-gray-400 text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase block">
               Customization
             </span>
-            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-gray-500">
+            <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-accent)]">
               <span className="hover:text-gray-900 transition-colors cursor-default">SIZE</span>
               <span className="text-gray-300">&bull;</span>
               <span className="hover:text-gray-900 transition-colors cursor-default">COLOR</span>

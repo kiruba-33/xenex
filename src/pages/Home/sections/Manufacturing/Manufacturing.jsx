@@ -1,6 +1,6 @@
 import React from 'react';
 // Using the hero image as a premium placeholder for manufacturing until final assets are ready
-import manufacturingImage from '../../../../assets/hero.png';
+import manufacturingImage from '../../../../assets/images/home1.webp';
 
 export default function Manufacturing() {
   return (
@@ -12,14 +12,14 @@ export default function Manufacturing() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-12 animate-fade-in-up">
           <div className="max-w-[700px]">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Manufacturing
               </span>
             </div>
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-6">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-6">
               WHERE FIBERGLASS<br />
-              <span className="text-gray-400">BECOMES REAL.</span>
+              <span className="">BECOMES REAL.</span>
             </h2>
             <p className="text-[17px] md:text-[20px] text-gray-600 leading-relaxed font-medium">
               A dedicated manufacturing environment, experienced craftsmen and technicians, and disciplined quality control support Xenex fiberglass production.
@@ -28,10 +28,10 @@ export default function Manufacturing() {
           
           {/* Conceptual Process Micro-Narrative */}
           <div className="flex flex-col items-start lg:items-end pb-2">
-            <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-gray-400 mb-3">
+            <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-[var(--color-accent)] mb-3">
               From Material To Finish
             </span>
-            <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-gray-900">
+            <div className="flex flex-wrap items-center gap-2 md:gap-3 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-accent)]">
               <span>Material</span>
               <span className="text-gray-300">&rarr;</span>
               <span>Moulding</span>
@@ -64,7 +64,7 @@ export default function Manufacturing() {
             
             {/* Facility Story */}
             <div className="mb-16">
-              <h3 className="text-gray-900 text-[13px] font-bold tracking-[0.2em] uppercase mb-6 leading-relaxed">
+              <h3 className="text-[var(--color-accent)] text-[13px] font-bold tracking-[0.2em] uppercase mb-6 leading-relaxed">
                 A Facility Built<br />Around Precision.
               </h3>
               <p className="text-gray-600 text-base leading-relaxed">

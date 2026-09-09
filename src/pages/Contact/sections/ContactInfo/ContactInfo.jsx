@@ -13,13 +13,13 @@ export default function ContactInfo() {
           {/* Main Content (Left) */}
           <div className="lg:col-span-5 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Get In Touch
               </span>
             </div>
             
-            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               Connect With Xenex
             </h2>
             
@@ -39,7 +39,7 @@ export default function ContactInfo() {
                 </span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 mb-2">
+                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] mb-2">
                   Phone
                 </h3>
                 <a href="tel:+918838908082" className="text-[20px] md:text-[22px] font-medium text-gray-900 hover:text-gray-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-sm">
@@ -56,7 +56,7 @@ export default function ContactInfo() {
                 </span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 mb-2">
+                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] mb-2">
                   WhatsApp
                 </h3>
                 <a href="https://wa.me/919677309890" target="_blank" rel="noopener noreferrer" className="text-[20px] md:text-[22px] font-medium text-gray-900 hover:text-gray-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-sm">
@@ -73,7 +73,7 @@ export default function ContactInfo() {
                 </span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 mb-2">
+                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] mb-2">
                   Email
                 </h3>
                 <div className="flex flex-col gap-2">
@@ -98,7 +98,7 @@ export default function ContactInfo() {
                 </span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 mb-2">
+                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] mb-2">
                   Website
                 </h3>
                 <a href="https://www.xenexeng.com" target="_blank" rel="noopener noreferrer" className="text-[20px] md:text-[22px] font-medium text-gray-900 hover:text-gray-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-sm">
@@ -115,7 +115,7 @@ export default function ContactInfo() {
                 </span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 mb-2">
+                <h3 className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] mb-2">
                   Address
                 </h3>
                 <address className="text-[17px] md:text-[19px] text-gray-900 font-medium leading-relaxed not-italic max-w-[400px]">

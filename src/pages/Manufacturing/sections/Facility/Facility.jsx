@@ -12,13 +12,13 @@ export default function Facility() {
           {/* Main Content (Left) */}
           <div className="lg:col-span-6 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Manufacturing Facility
               </span>
             </div>
             
-            <h2 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8 pr-4 lg:pr-10">
+            <h2 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8 pr-4 lg:pr-10">
               A Manufacturing Environment Built Around Fiberglass Expertise
             </h2>
             
@@ -33,7 +33,7 @@ export default function Facility() {
             <div className="pb-10 mb-10 border-b border-gray-200 group">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-[13px] font-bold text-gray-400 tracking-[0.1em] group-hover:text-gray-900 transition-colors duration-300">01 /</span>
-                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 group-hover:text-gray-700 transition-colors duration-300">Environment</span>
+                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] group-hover:text-gray-700 transition-colors duration-300">Environment</span>
               </div>
               <h3 className="text-[22px] md:text-[26px] font-semibold text-gray-900 tracking-tight leading-snug mb-3">
                 State-of-the-Art Facility
@@ -46,7 +46,7 @@ export default function Facility() {
             <div className="pb-10 mb-10 border-b border-gray-200 group">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-[13px] font-bold text-gray-400 tracking-[0.1em] group-hover:text-gray-900 transition-colors duration-300">02 /</span>
-                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 group-hover:text-gray-700 transition-colors duration-300">Expertise</span>
+                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] group-hover:text-gray-700 transition-colors duration-300">Expertise</span>
               </div>
               <h3 className="text-[22px] md:text-[26px] font-semibold text-gray-900 tracking-tight leading-snug mb-3">
                 Skilled Workforce
@@ -59,7 +59,7 @@ export default function Facility() {
             <div className="group">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-[13px] font-bold text-gray-400 tracking-[0.1em] group-hover:text-gray-900 transition-colors duration-300">03 /</span>
-                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-gray-400 group-hover:text-gray-700 transition-colors duration-300">Scale</span>
+                <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] group-hover:text-gray-700 transition-colors duration-300">Scale</span>
               </div>
               <h3 className="text-[22px] md:text-[26px] font-semibold text-gray-900 tracking-tight leading-snug mb-3">
                 Production Capacity

@@ -1,6 +1,6 @@
 import React from 'react';
 // Using the hero image as the premium placeholder for the single industry visual
-import industryImage from '../../../../assets/hero.png';
+import industryImage from '../../../../assets/images/home4.webp';
 
 export default function Industries() {
   const industries = [
@@ -25,14 +25,14 @@ export default function Industries() {
             {/* Header */}
             <div className="mb-16 lg:mb-20">
               <div className="flex items-center gap-4 mb-6">
-                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                   Industries We Serve
                 </span>
-                <span className="w-12 h-[1px] bg-gray-300"></span>
+                <span className="w-12 h-[1px] bg-[var(--color-accent)]/30"></span>
               </div>
-              <h2 className="text-[40px] sm:text-[50px] md:text-[64px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+              <h2 className="text-[40px] sm:text-[50px] md:text-[64px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
                 BUILT FOR DEMANDING<br />
-                <span className="text-gray-400">INDUSTRIES.</span>
+                <span className="">INDUSTRIES.</span>
               </h2>
               <p className="text-[18px] md:text-[21px] text-gray-600 leading-relaxed font-medium max-w-[650px]">
                 Fiberglass and FRP applications engineered for sectors where durability, corrosion resistance and dependable performance matter.
@@ -80,7 +80,7 @@ export default function Industries() {
               
               {/* Subtle visual badge */}
               <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md px-6 py-4 rounded-[16px] shadow-lg">
-                <span className="block text-[10px] font-bold tracking-[0.2em] uppercase text-gray-400 mb-1">Xenex Quality</span>
+                <span className="block text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-1">Xenex Quality</span>
                 <span className="block text-gray-900 font-semibold tracking-wide">Industrial Grade</span>
               </div>
             </div>

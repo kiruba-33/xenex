@@ -1,6 +1,6 @@
 import React from 'react';
 // Using the hero image as a premium placeholder until final assets are ready
-import whyXenexImage from '../../../../assets/hero.png';
+import whyXenexImage from '../../../../assets/images/home6.webp';
 
 export default function WhyXenex() {
   return (
@@ -11,14 +11,14 @@ export default function WhyXenex() {
         {/* Header Section */}
         <div className="flex flex-col items-start max-w-[900px] mb-16 lg:mb-20 animate-fade-in-up">
           <div className="flex items-center gap-4 mb-6">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
               Why Xenex
             </span>
           </div>
-          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             BUILT ON EXPERIENCE.<br />
-            <span className="text-gray-400">DEFINED BY RELIABILITY.</span>
+            <span className="">DEFINED BY RELIABILITY.</span>
           </h2>
           <p className="text-lg md:text-[21px] text-gray-600 leading-relaxed font-medium max-w-[750px]">
             From quality control to customer-focused manufacturing, Xenex combines fiberglass expertise with a practical commitment to reliable delivery and long-term performance.
@@ -47,7 +47,7 @@ export default function WhyXenex() {
               
               {/* Row 01 */}
               <div className="group border-b border-gray-200 py-6 md:py-8 flex flex-col md:flex-row md:items-start gap-4 lg:gap-6 hover:bg-white transition-colors duration-300 cursor-pointer -mx-6 px-6 lg:-mx-8 lg:px-8">
-                <span className="text-gray-300 text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
+                <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
                   01
                 </span>
                 <div className="flex-1">
@@ -65,7 +65,7 @@ export default function WhyXenex() {
 
               {/* Row 02 */}
               <div className="group border-b border-gray-200 py-6 md:py-8 flex flex-col md:flex-row md:items-start gap-4 lg:gap-6 hover:bg-white transition-colors duration-300 cursor-pointer -mx-6 px-6 lg:-mx-8 lg:px-8">
-                <span className="text-gray-300 text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
+                <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
                   02
                 </span>
                 <div className="flex-1">
@@ -83,7 +83,7 @@ export default function WhyXenex() {
 
               {/* Row 03 */}
               <div className="group border-b border-gray-200 py-6 md:py-8 flex flex-col md:flex-row md:items-start gap-4 lg:gap-6 hover:bg-white transition-colors duration-300 cursor-pointer -mx-6 px-6 lg:-mx-8 lg:px-8">
-                <span className="text-gray-300 text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
+                <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
                   03
                 </span>
                 <div className="flex-1">
@@ -101,7 +101,7 @@ export default function WhyXenex() {
 
               {/* Row 04 */}
               <div className="group border-b border-gray-200 py-6 md:py-8 flex flex-col md:flex-row md:items-start gap-4 lg:gap-6 hover:bg-white transition-colors duration-300 cursor-pointer -mx-6 px-6 lg:-mx-8 lg:px-8">
-                <span className="text-gray-300 text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
+                <span className="text-[var(--color-accent)] text-sm font-bold tracking-[0.2em] group-hover:text-gray-500 transition-colors duration-300 w-10 md:pt-1">
                   04
                 </span>
                 <div className="flex-1">
@@ -121,15 +121,15 @@ export default function WhyXenex() {
 
             {/* Values Strip (Bottom secondary strip) */}
             <div className="flex flex-wrap items-center gap-3 md:gap-4 mt-12 pt-6">
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-300 cursor-default">
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] hover:text-gray-900 transition-colors duration-300 cursor-default">
                 INNOVATION
               </span>
               <span className="text-gray-300 text-xs">/</span>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-300 cursor-default">
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] hover:text-gray-900 transition-colors duration-300 cursor-default">
                 RELIABILITY
               </span>
               <span className="text-gray-300 text-xs">/</span>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-300 cursor-default">
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)] hover:text-gray-900 transition-colors duration-300 cursor-default">
                 SUSTAINABILITY
               </span>
             </div>

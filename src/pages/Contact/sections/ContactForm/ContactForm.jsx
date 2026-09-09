@@ -65,13 +65,13 @@ export default function ContactForm() {
           {/* Main Content (Left) */}
           <div className="lg:col-span-5 flex flex-col items-start animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+              <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
                 Send an Enquiry
               </span>
             </div>
             
-            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h2 className="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
               Tell Us About Your Requirement
             </h2>
             
@@ -80,7 +80,7 @@ export default function ContactForm() {
             </p>
 
             <div className="mt-4 pt-8 border-t border-gray-200 hidden lg:block">
-              <span className="text-[11px] md:text-[12px] font-bold tracking-[0.25em] uppercase text-gray-400">
+              <span className="text-[11px] md:text-[12px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Professional &bull; Reliable
               </span>
             </div>
@@ -108,7 +108,7 @@ export default function ContactForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
                   {/* Full Name */}
                   <div className="flex flex-col gap-3">
-                    <label htmlFor="fullName" className="text-[12px] font-bold tracking-[0.1em] uppercase text-gray-500">
+                    <label htmlFor="fullName" className="text-[12px] font-bold tracking-[0.1em] uppercase text-[var(--color-accent)]">
                       01 &mdash; Full Name *
                     </label>
                     <input
@@ -128,7 +128,7 @@ export default function ContactForm() {
 
                   {/* Email */}
                   <div className="flex flex-col gap-3">
-                    <label htmlFor="email" className="text-[12px] font-bold tracking-[0.1em] uppercase text-gray-500">
+                    <label htmlFor="email" className="text-[12px] font-bold tracking-[0.1em] uppercase text-[var(--color-accent)]">
                       02 &mdash; Email Address *
                     </label>
                     <input
@@ -151,7 +151,7 @@ export default function ContactForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
                   {/* Phone Number */}
                   <div className="flex flex-col gap-3">
-                    <label htmlFor="phone" className="text-[12px] font-bold tracking-[0.1em] uppercase text-gray-500">
+                    <label htmlFor="phone" className="text-[12px] font-bold tracking-[0.1em] uppercase text-[var(--color-accent)]">
                       03 &mdash; Phone Number *
                     </label>
                     <input
@@ -171,7 +171,7 @@ export default function ContactForm() {
 
                   {/* Company */}
                   <div className="flex flex-col gap-3">
-                    <label htmlFor="company" className="text-[12px] font-bold tracking-[0.1em] uppercase text-gray-500">
+                    <label htmlFor="company" className="text-[12px] font-bold tracking-[0.1em] uppercase text-[var(--color-accent)]">
                       04 &mdash; Company / Organization
                     </label>
                     <input
@@ -188,7 +188,7 @@ export default function ContactForm() {
 
                 {/* Requirement */}
                 <div className="flex flex-col gap-3">
-                  <label htmlFor="requirement" className="text-[12px] font-bold tracking-[0.1em] uppercase text-gray-500">
+                  <label htmlFor="requirement" className="text-[12px] font-bold tracking-[0.1em] uppercase text-[var(--color-accent)]">
                     05 &mdash; Requirement *
                   </label>
                   <textarea

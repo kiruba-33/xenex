@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // Using the hero image as an authentic Xenex product placeholder
-import storyImage from '../../../../assets/hero.png';
+import storyImage from '../../../../assets/images/home2.webp';
 
 export default function Story() {
   return (
@@ -17,16 +17,16 @@ export default function Story() {
             
             {/* Eyebrow */}
             <div className="flex items-center gap-4 mb-6">
-              <span className="w-8 h-[1px] bg-gray-300"></span>
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+              <span className="w-8 h-[1px] bg-[var(--color-accent)]/30"></span>
+              <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                 Our Story
               </span>
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-10">
+            <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-10">
               BUILT FROM FIBERGLASS.<br />
-              <span className="text-gray-400">GROWN THROUGH EXPERIENCE.</span>
+              <span className="">GROWN THROUGH EXPERIENCE.</span>
             </h2>
 
             {/* Story Paragraphs */}

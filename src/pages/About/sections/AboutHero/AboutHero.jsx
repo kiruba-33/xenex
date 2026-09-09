@@ -15,17 +15,17 @@ export default function AboutHero() {
         
         {/* Eyebrow */}
         <div className="flex items-center justify-center gap-4 mb-8 animate-fade-in-up">
-          <span className="w-12 h-[1px] bg-gray-300 hidden sm:block"></span>
-          <span className="text-[11px] md:text-xs font-bold tracking-[0.25em] uppercase text-gray-500">
+          <span className="w-12 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+          <span className="text-[11px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
             About Xenex
           </span>
-          <span className="w-12 h-[1px] bg-gray-300 hidden sm:block"></span>
+          <span className="w-12 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
         </div>
         
         {/* Main Heading */}
-        <h1 className="text-[44px] sm:text-[56px] md:text-[72px] lg:text-[88px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+        <h1 className="text-[44px] sm:text-[56px] md:text-[72px] lg:text-[88px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           ENGINEERED THROUGH<br />
-          <span className="text-gray-400">EXPERIENCE.</span>
+          <span className="">EXPERIENCE.</span>
         </h1>
         
         {/* Supporting Text */}

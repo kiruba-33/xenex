@@ -37,13 +37,13 @@ export default function Process() {
         {/* Header Section */}
         <div className="max-w-[850px] mb-20 md:mb-32 animate-fade-in-up">
           <div className="flex items-center gap-4 mb-6">
-            <span className="w-8 h-[1px] bg-gray-300 hidden sm:block"></span>
-            <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-500">
+            <span className="w-8 h-[1px] bg-[var(--color-accent)]/30 hidden sm:block"></span>
+            <span className="text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase text-[var(--color-accent)]">
               Manufacturing Process
             </span>
           </div>
           
-          <h2 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[56px] font-semibold text-gray-900 leading-[1.05] tracking-tight mb-8">
+          <h2 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
             From Material Selection to Finished Fiberglass Products
           </h2>
           

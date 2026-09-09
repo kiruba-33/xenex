@@ -1,6 +1,6 @@
 import React from 'react';
 // Using the hero image as a premium placeholder for quality/inspection until final assets are ready
-import qualityImage from '../../../../assets/hero.png';
+import qualityImage from '../../../../assets/images/home2.webp';
 
 export default function QualityAssurance() {
   return (
@@ -27,11 +27,11 @@ export default function QualityAssurance() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-8 h-[1px] bg-black/20 hidden sm:block"></span>
-                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[#666666]">
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
                   Quality Assurance
                 </span>
               </div>
-              <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[#111111] leading-[1.05] tracking-tight mb-8">
+              <h2 className="text-[38px] sm:text-[46px] md:text-[56px] font-semibold text-[var(--color-primary)] leading-[1.05] tracking-tight mb-8">
                 QUALITY IS BUILT<br />
                 <span className="text-[#777777]">INTO EVERY STAGE.</span>
               </h2>
@@ -135,12 +135,12 @@ export default function QualityAssurance() {
         <div className="mt-20 lg:mt-28 pt-8 border-t border-gray-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
           
           <div className="flex items-center">
-            <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-[#888888]">
+            <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-[var(--color-accent)]">
               Quality Principles
             </span>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 md:gap-6 text-[11px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#111111]">
+          <div className="flex flex-wrap items-center gap-3 md:gap-6 text-[11px] md:text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-accent)]">
             <span className="hover:text-sky-600 transition-colors cursor-default">DURABILITY</span>
             <span className="text-[#CCCCCC]">&bull;</span>
             <span className="hover:text-sky-600 transition-colors cursor-default">STRENGTH</span>
