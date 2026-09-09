@@ -1,6 +1,6 @@
 import React from 'react';
-import boatImage from '../../../../assets/images/abouthome.webp';
-import autoImage from '../../../../assets/images/auto-parts.webp';
+import boatImage from '../../../../assets/images/glass.webp';
+import autoImage from '../../../../assets/images/auto1.webp';
 export default function Solutions() {
   return (
     <section id="solutions" className="relative w-full py-24 lg:py-32 bg-white overflow-hidden">
